@@ -1,21 +1,27 @@
 ## Demandas
 
+#### Tarefa 3
+
+- [ ] Posicionar câmera em local de movimentação
+- [ ] Tentar adicionar movimentação manualmente e gerar gif a partir de imagens de movimentação. [Sionna com Mobilidade](https://nvlabs.github.io/sionna/examples/Sionna_Ray_Tracing_Mobility.html)
+- [ ] Pesquisar referências sobre OFDM
+
 #### Tarefa 2
 
-- [ ] Usar posição de antena real para construir a cena
-- [ ] Calcular a resposta ao Impulso do Canal (paths.cir())
-- [ ] Plotar gráficos resposta usando _a_ e _$\tau$_
-- [ ] Calcular a resposta na frequencia do canal usando
+- [x] Usar posição de antena real para construir a cena (CONDOMÍNIO EDIFÍCIO NAUTILUS, AVENIDA BEIRA MAR)
+- [x] Calcular a resposta ao Impulso do Canal (paths.cir())
+- [x] Plotar gráficos resposta usando _a_ e _$\tau$_
+- [x] Calcular a resposta na frequencia do canal usando
 
 ```
 20*np.log10(tf.abs(h_f).numpy()) #Tranformando em DB
 subcarrier_frequencies(num_subcarriers, subcarrier_spacing) #Gerando frequencias de uso do sistema
 ```
 
-- [ ] Escolher valores para calcular resposta na frequencia do site abaixo
+- [x] Escolher valores para calcular resposta na frequencia do site abaixo
       [NR Explained](https://www.nrexplained.com/bandwidth)
-- [ ] Plotar gráficos da resposta na frequência do usuário usando _cir_to_ofdm_channel()_
-- [ ] Pesquisar referências sobre OFDM
+- [x] Plotar gráficos da resposta na frequência do usuário usando _cir_to_ofdm_channel()_
+- [x] Pesquisar referências sobre OFDM
 
 #### Tarefa 1 - Concluida
 
