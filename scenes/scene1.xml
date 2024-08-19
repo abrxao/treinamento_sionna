@@ -16,15 +16,18 @@
 			<rgb value="0.467202 0.467202 0.467202" name="reflectance"/>
 		</bsdf>
 	</bsdf>
-	<bsdf type="diffuse" id="mat-itu_marble" name="mat-itu_marble">
-		<rgb value="0.974014 1.000000 0.784361" name="reflectance"/>
-	</bsdf>
 	<bsdf type="diffuse" id="mat-itu_metal" name="mat-itu_metal">
 		<rgb value="0.123710 0.107312 0.090847" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-itu_marble" name="mat-itu_marble">
+		<rgb value="0.974014 1.000000 0.784361" name="reflectance"/>
 	</bsdf>
 
 <!-- Emitters -->
 
+	<emitter type="constant" id="World" name="World">
+		<rgb value="0.827557 0.827557 0.827557" name="radiance"/>
+	</emitter>
 
 <!-- Shapes -->
 
@@ -32,6 +35,16 @@
 		<string name="filename" value="meshes/Plane.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-car_02" name="mesh-car_02">
+		<string name="filename" value="meshes/car_02.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-car_01" name="mesh-car_01">
+		<string name="filename" value="meshes/car_01.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_metal" name="bsdf"/>
 	</shape>
 	<shape type="ply" id="mesh-map_5_osm_buildings-itu_marble" name="mesh-map_5_osm_buildings-itu_marble">
 		<string name="filename" value="meshes/map_5_osm_buildings-itu_marble.ply"/>
