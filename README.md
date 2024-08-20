@@ -1,10 +1,16 @@
 ## Demandas
 
+#### Tarefa 4
+
+- [ ] Instalar o sumo e fazer uma simulação na região escolhida da tarefa 1.
+- [ ] Encontrar a pasta com os arquivos da simulação. (Road-Types: Highway) (Vehicles: Cars[50 , 12]) (Duration: 100)
+- [ ] Adicionar simulação do local escolhido a pasta "sumo_simulations"
+- [ ] Pesquisar referências sobre OFDM
+
 #### Tarefa 3
 
-- [ ] Posicionar câmera em local de movimentação
+- [x] Posicionar câmera em local de movimentação
 - [ ] Tentar adicionar movimentação manualmente e gerar gif a partir de imagens de movimentação. [Sionna com Mobilidade](https://nvlabs.github.io/sionna/examples/Sionna_Ray_Tracing_Mobility.html)
-- [ ] Pesquisar referências sobre OFDM
 
 #### Tarefa 2
 
