@@ -1,10 +1,17 @@
 ## Demandas
 
+#### Tarefa 5
+
+- [ ] Rescolher area de estudo para que estradas não fiquem cortadas na cena. (coordenadas)
+- [ ] Gerar arquivos com camera posicionada e usuarios se movendo.
+- [ ] Pegar diferença de localização do sumo e sionna para ajustar posição da simulação.
+
 #### Tarefa 4
 
-- [ ] Instalar o sumo e fazer uma simulação na região escolhida da tarefa 1.
-- [ ] Encontrar a pasta com os arquivos da simulação. (Road-Types: Highway) (Vehicles: Cars[50 , 12]) (Duration: 100)
-- [ ] Adicionar simulação do local escolhido a pasta "sumo_simulations"
+- [x] Usar as coordenadas do blender no sumo para gerar simulação
+- [x] Instalar o sumo e fazer uma simulação na região escolhida da tarefa 1.
+- [x] Encontrar a pasta com os arquivos da simulação. (Road-Types: Highway) (Vehicles: Cars[50 , 12]) (Duration: 100)
+- [x] Adicionar simulação do local escolhido a pasta "sumo_simulations"
 - [ ] Pesquisar referências sobre OFDM
 
 #### Tarefa 3
