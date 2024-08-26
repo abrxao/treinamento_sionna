@@ -31,7 +31,7 @@ subcarrier_frequencies(num_subcarriers, subcarrier_spacing) #Gerando frequencias
 
 #### Tarefa 1 - Concluida
 
-- [x] Escolher a região de simulação. (-38.51023,-3.72479,-38.50522,-3.72078)
+- [x] Escolher a região de simulação. (-38.51233,-3.72236,-38.50909,-3.72018)
 - [x] Salvar a posição da antena escolhida. (Se possivel justificar a escolha).
 - [x] Colocar no minimo dois receptores na cena em posições reais.
 - [x] Usar o scene.preview() para ver a posição no mapa e encontra-los.
