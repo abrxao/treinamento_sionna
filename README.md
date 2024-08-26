@@ -5,6 +5,8 @@
 - [ ] Rescolher area de estudo para que estradas não fiquem cortadas na cena. (coordenadas)
 - [ ] Gerar arquivos com camera posicionada e usuarios se movendo.
 - [ ] Pegar diferença de localização do sumo e sionna para ajustar posição da simulação.
+- [ ] Gerar gif a partir de imagens de movimentação.
+- [ ] Pesquisar referências sobre OFDM
 
 #### Tarefa 4
 
@@ -12,12 +14,11 @@
 - [x] Instalar o sumo e fazer uma simulação na região escolhida da tarefa 1.
 - [x] Encontrar a pasta com os arquivos da simulação. (Road-Types: Highway) (Vehicles: Cars[50 , 12]) (Duration: 100)
 - [x] Adicionar simulação do local escolhido a pasta "sumo_simulations"
-- [ ] Pesquisar referências sobre OFDM
 
 #### Tarefa 3
 
 - [x] Posicionar câmera em local de movimentação
-- [ ] Tentar adicionar movimentação manualmente e gerar gif a partir de imagens de movimentação. [Sionna com Mobilidade](https://nvlabs.github.io/sionna/examples/Sionna_Ray_Tracing_Mobility.html)
+- [x] Tentar adicionar movimentação manualmente. [Sionna com Mobilidade](https://nvlabs.github.io/sionna/examples/Sionna_Ray_Tracing_Mobility.html)
 
 #### Tarefa 2
 
