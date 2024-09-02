@@ -2,7 +2,7 @@
 
 #### Tarefa 5
 
-- [ ] Rescolher area de estudo para que estradas não fiquem cortadas na cena. (coordenadas)
+- [ ] Rescolher area de estudo para que estradas não fiquem cortadas na cena. (-38.51509,-3.72433,-38.50840,-3.71989)
 - [ ] Gerar arquivos com camera posicionada e usuarios se movendo.
 - [ ] Pegar diferença de localização do sumo e sionna para ajustar posição da simulação.
 - [ ] Gerar gif a partir de imagens de movimentação.
