@@ -1,5 +1,8 @@
 ## Demandas
 
+### Tarefa 6
+- [ ] Coordenadas novas: -38.49018,-3.72519,-38.48410,-3.72278
+
 #### Tarefa 5
 
 - [ ] Rescolher area de estudo para que estradas não fiquem cortadas na cena. (-38.51509,-3.72433,-38.50840,-3.71989)
