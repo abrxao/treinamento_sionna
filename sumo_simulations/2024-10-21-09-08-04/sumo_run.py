@@ -6,6 +6,7 @@ import datetime
 from random import randrange
 import pandas as pd
 
+
 def getdatetime():
         utc_now = pytz.utc.localize(datetime.datetime.utcnow())
         currentDT = utc_now.astimezone(pytz.timezone('UTC'))
@@ -21,6 +22,7 @@ def flatten_list(_2d_list):
         else:
             flat_list.append(element)
     return flat_list
+
 
 sumoCmd = ["sumo", "-c", "osm.sumocfg"]
 traci.start(sumoCmd)
@@ -136,8 +138,8 @@ while traci.simulation.getMinExpectedNumber() > 0:
                 trafficlightduration = [5,37,5,35,6,3]
                 trafficsignal = ["rrrrrrGGGGgGGGrr", "yyyyyyyyrrrrrrrr", "rrrrrGGGGGGrrrrr", "rrrrryyyyyyrrrrr", "GrrrrrrrrrrGGGGg", "yrrrrrrrrrryyyyy"]
                 
-                traci.trafficlight.setPhaseDuration(trafficlights[k], trafficlightduration[randrange(6)])
-                traci.trafficlight.setRedYellowGreenState(trafficlights[k], trafficsignal[randrange(6)])
+                #traci.trafficlight.setPhaseDuration(trafficlights[k], trafficlightduration[randrange(6)])
+                #traci.trafficlight.setRedYellowGreenState(trafficlights[k], trafficsignal[randrange(6)])
 
                 ##------------------------------------------------------##
 
@@ -145,8 +147,7 @@ while traci.simulation.getMinExpectedNumber() > 0:
 traci.close()
 
 #Generate Excel file
-columnnames = ['dateandtime','steps', 'vehid', 'coord', 'gpscoord', 'spd', 'edge', 'lane', 'displacement', 'turnAngle', 'nextTLS', \
-               'steps','tflight', 'tl_state', 'tl_phase_duration', 'tl_lanes_controlled', 'tl_program', 'tl_next_switch']
+columnnames = ['dateandtime','steps', 'vehid', 'coord', 'gpscoord', 'spd', 'edge', 'lane', 'displacement', 'turnAngle', 'nextTLS']
 dataset = pd.DataFrame(packBigData, index=None, columns=columnnames)
 dataset.to_excel("output.xlsx", index=False)
 time.sleep(5)

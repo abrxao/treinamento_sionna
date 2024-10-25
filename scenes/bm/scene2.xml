@@ -11,27 +11,40 @@
 
 <!-- Materials -->
 
-	<bsdf type="diffuse" id="mat-itu_metal" name="mat-itu_metal">
+	<bsdf type="diffuse" id="mat-itu_marble" name="mat-itu_marble">
 		<rgb value="1.000000 0.500000 0.200000" name="reflectance"/>
 	</bsdf>
-	<bsdf type="diffuse" id="mat-itu_marble" name="mat-itu_marble">
+	<bsdf type="diffuse" id="mat-itu_metal" name="mat-itu_metal">
 		<rgb value="0.290000 0.250000 0.210000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="twosided" id="mat-itu_concrete" name="mat-itu_concrete">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.800000 0.800000 0.800000" name="reflectance"/>
+		</bsdf>
 	</bsdf>
 
 <!-- Emitters -->
 
+	<emitter type="constant" id="elm__1" name="elm__1">
+		<rgb value="1.000000 1.000000 1.000000" name="radiance"/>
+	</emitter>
 
 <!-- Shapes -->
 
-	<shape type="ply" id="elm__3" name="elm__3">
-		<string name="filename" value="meshes/map_12_osm_buildings-itu_metal.ply"/>
+	<shape type="ply" id="elm__4" name="elm__4">
+		<string name="filename" value="meshes/map_13_osm_buildings-itu_marble.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_marble" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__5" name="elm__5">
+		<string name="filename" value="meshes/map_13_osm_buildings-itu_metal.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_metal" name="bsdf"/>
 	</shape>
-	<shape type="ply" id="elm__4" name="elm__4">
-		<string name="filename" value="meshes/map_12_osm_buildings-itu_marble.ply"/>
+	<shape type="ply" id="elm__7" name="elm__7">
+		<string name="filename" value="meshes/Plane.ply"/>
 		<boolean name="face_normals" value="true"/>
-		<ref id="mat-itu_marble" name="bsdf"/>
+		<ref id="mat-itu_concrete" name="bsdf"/>
 	</shape>
 
 <!-- Volumes -->
